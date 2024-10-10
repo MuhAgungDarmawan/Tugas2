@@ -6,91 +6,215 @@
     <title>Tentang Saya</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Warna latar belakang yang lebih lembut */
+        }
+        h1, h2 {
+            margin-bottom: 20px; /* Memberi jarak lebih pada judul */
+        }
+        .card {
+            margin-bottom: 30px; /* Jarak antar kartu */
+        }
+        .profile-picture {
+            width: 200px; /* Ukuran gambar */
+            height: 200px; /* Ukuran gambar */
+            object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+            border-radius: 50%; /* Membuat gambar berbentuk bulat */
+        }
+        .carousel-item img {
+            max-height: 500px; /* Atur tinggi maksimum gambar */
+            object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
         <!-- Pengenalan Diri -->
         <h1 class="text-center">Tentang Saya</h1>
-        <p>Nama: Muhammad Agung Darmawan</p>
-        <p>NIM: 230209502204</p>
-        <p>Kelas: PTIK F</p>
-        <p>Alamat: <del>Jl. Kesehatan </del> Jl. Cendana Timur</p>
-        <p>Asal Sekolah: SMAN 11 Panggkep</p>
-        <pre>Motto Hidup: "Jangan lupa Ketawa"</pre>
-
-        <!-- Pengalaman Selama Perkuliahan -->
-        <h2  class="text-center">Pengalaman Selama Perkuliahan di PTIK</h2>
-        <p>Pengalaman perkuliahan dari saya sangat senang bisa mengenal banyak teman baru dari berbagai daerah. Saya juga memiliki kesempatan untuk berinteraksi dengan dosen dan teman-teman yang sangat mendukung. Diskusi yang sering dilakukan di kelas maupun di luar kelas membuat saya semakin paham tentang materi yang diajarkan. Selain itu, saya juga aktif mengikuti berbagai kegiatan akademik dan non-akademik yang membantu meningkatkan soft skill saya.</p>
-
-        <!-- Daftar Mata Kuliah yang Dipelajari -->
-        <h2 class="text-center">Daftar Mata Kuliah yang Telah Dipelajari</h2>
-        <ol>
-            <li>Pemrograman Web</li>
-            <li>Struktur Data</li>
-            <li>Kecerdasan Buatan</li>
-            <li>Keamanan Komputer</li>
-        </ol>
-
-        <!-- Daftar Dosen -->
-        <h2 class="text-center">Daftar Dosen</h2>
-        <ul class="list-group">
-            <li class="list-group-item">Alifya NFH, S.Pd, M.Pd</li>
-            <li class="list-group-item">Nurfadilah, S.Pd, M.Cs</li>
-            <li class="list-group-item">Fatiah Adibah, S.Pd, M.Cs</li>
-            <li class="list-group-item">Fadhlirrahman Baso, S.Pd, M.Pd</li>
-        </ul>
 
         <!-- Foto Profil -->
-         <h2 class="text-center">Foto Profil</h2>
-         <div class="text-center mb-4">
-         <img src="WhatsApp Image 2024-09-29 at 19.32.02_6baf6c07.jpg" class="img-fluid rounded-circle" style="max-width: 500px; height: auto;" alt="Kegiatan">
-         </div>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-4 text-center">
+                <img src="WhatsApp Image 2024-09-29 at 19.32.02_6baf6c07.jpg" alt="Foto Profil" class="img-fluid profile-picture shadow-lg">
+            </div>
+        </div>
 
+        <!-- Informasi Pribadi -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header text-center">
+                        <h4>Informasi Pribadi</h4>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Nama:</strong> Muhammad Agung Darmawan</p>
+                        <p><strong>NIM:</strong> 230209502204</p>
+                        <p><strong>Kelas:</strong> PTIK F</p>
+                        <p><strong>Alamat:</strong> <del>Jl. Kesehatan</del> Jl. Cendana Timur</p>
+                        <p><strong>Asal Sekolah:</strong> SMAN 11 Pangkep</p>
+                        <p><strong>Motto Hidup:</strong> <em>"Jangan lupa Ketawa"</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Pengalaman Selama Perkuliahan -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow mb-4">
+                    <div class="card-header text-center">
+                        <h4>Pengalaman Selama Perkuliahan di PTIK</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>Pengalaman perkuliahan dari saya sangat senang bisa mengenal banyak teman baru dari berbagai daerah. Saya juga memiliki kesempatan untuk berinteraksi dengan dosen dan teman-teman yang sangat mendukung. Diskusi yang sering dilakukan di kelas maupun di luar kelas membuat saya semakin paham tentang materi yang diajarkan. Selain itu, saya juga aktif mengikuti berbagai kegiatan akademik dan non-akademik yang membantu meningkatkan soft skill saya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daftar Mata Kuliah yang Telah Dipelajari -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow mb-4">
+                    <div class="card-header text-center">
+                        <h4>Daftar Mata Kuliah yang Telah Dipelajari</h4>
+                    </div>
+                    <div class="card-body">
+                        <ol>
+                            <li>Pemrograman Web</li>
+                            <li>Struktur Data</li>
+                            <li>Kecerdasan Buatan</li>
+                            <li>Keamanan Komputer</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <!-- Daftar Dosen -->
+        <div class="container mt-5">
+            <h2 class="text-center">Daftar Dosen</h2>
+            <div class="row justify-content-center">
+                <!-- Dosen 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Alifya NFH, S.Pd, M.Pd</h5>
+                            <p class="card-text">Dosen Mata Kuliah: Kecerdasan Buatan. Memiliki pengalaman mengajar selama lebih dari 5 tahun.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Dosen 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Nurfadilah, S.Pd, M.Cs</h5>
+                            <p class="card-text">Dosen Mata Kuliah: Pemrograman Web. Ahli dalam pengembangan aplikasi web dan mobile.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Dosen 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Fatiah Adibah, S.Pd, M.Cs</h5>
+                            <p class="card-text">Dosen Mata Kuliah: Keamanan Komputer. Berpengalaman dalam penelitian keamanan siber.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Dosen 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Fadhlirrahman Baso, S.Pd, M.Pd</h5>
+                            <p class="card-text">Dosen Mata Kuliah: Struktur Data. Mengedukasi dengan pendekatan praktis dan teoritis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slideshow Gambar Kegiatan -->
+        <h2 class="text-center mt-5">Foto Kegiatan</h2>
+        <div id="activityCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="WhatsApp Image 2024-09-07 at 21.16.32_ce683053.jpg" class="d-block w-100" alt="Kegiatan 1">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="WhatsApp Image 2024-10-04 at 15.21.24_89881b13.jpg" class="d-block w-100" alt="Kegiatan 2">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="WhatsApp Image 2024-10-08 at 19.35.28_a3d87375.jpg" class="d-block w-100" alt="Kegiatan 3">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#activityCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Sebelumnya</span>
+            </a>
+            <a class="carousel-control-next" href="#activityCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Selanjutnya</span>
+            </a>
+        </div>
+        
         <!-- Tabel Nama Teman Dekat -->
-<h2 class="text-center">Teman Dekat</h2>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Jenis Kelamin</th>
-            <th>Alamat</th>
-            <th>Asal Sekolah</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Dani</td>
-            <td>Laki-laki</td>
-            <td>Jl. Perjanjian Bongaya</td>
-            <td>SMA Negeri 20 Makassar</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Khaerul</td>
-            <td>Laki-laki</td>
-            <td>Jl. Malengkeri</td>
-            <td>SMA Negeri 1 Bantaeng</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Aqil</td>
-            <td>Laki-laki</td>
-            <td>Jl. Banda</td>
-            <td>SMA Negeri 16 Makassar</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>M.eqhy</td>
-            <td>Laki-laki</td>
-            <td>Jl. Rappocini Raya</td>
-            <td>SMA Negeri 11 Makassar</td>
-        </tr>
-    </tbody>
-</table>
-
+        <h2 class="text-center mt-5">Teman Dekat</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Alamat</th>
+                            <th>Asal Sekolah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dani</td>
+                            <td>Laki-laki</td>
+                            <td>Jl. Perjanjian Bongaya</td>
+                            <td>SMA Negeri 20 Makassar</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Khaerul</td>
+                            <td>Laki-laki</td>
+                            <td>Jl. Malengkeri</td>
+                            <td>SMA Negeri 1 Bantaeng</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Aqil</td>
+                            <td>Laki-laki</td>
+                            <td>Jl. Banda</td>
+                            <td>SMA Negeri 16 Makassar</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>M.eqhy</td>
+                            <td>Laki-laki</td>
+                            <td>Jl. Rappocini Raya</td>
+                            <td>SMA Negeri 11 Makassar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -98,3 +222,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+       
+           
